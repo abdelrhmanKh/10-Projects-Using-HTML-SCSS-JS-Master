@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="search">
+            <input type="text" id="term">
+            <button id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="fav-container">
+            <ul id="favoriteContainer">
+
+            </ul>
+        </div>
+        <div class="Meals-container" id="mealContainer">
+
+        </div>
+
+        <div class="popup-container hidden" id="meal-popup">
+            <div class="popup">
+                <button id="close-popup" class="close-popup"> <i class="fas fa-times"></i></button>
+                <div class="meal-info" id="meal-info"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
