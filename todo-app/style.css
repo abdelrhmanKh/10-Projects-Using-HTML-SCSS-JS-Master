@@ -13,29 +13,39 @@ body {
     max-width: 600px;
     padding: 10px;
     margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.container div {
+.container h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: #ff5533b6
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+    width: 500px;
+
     margin: 10px auto;
+    padding: 1rem;
     background-color: #eee;
-    max-width: 600px;
-    min-width: 350px;
-    min-height: 100px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .input {
     border: none;
-    min-width: 65%;
-    height: 40px;
     border-radius: 10px;
     padding: 10px;
     font-weight: 600;
@@ -44,14 +54,12 @@ body {
 }
 
 .input:focus-visible {
-    outline: none;
-    border: 2px solid #ff5433;
+    outline: 2px solid #ff5433;
+
 }
 
 .add {
     border: none;
-    height: 40px;
-    width: 20%;
     cursor: pointer;
     font-weight: 600;
     border-radius: 10px;
@@ -63,25 +71,15 @@ body {
     color: white;
     font-size: 18px;
     padding: 10px 5px;
-
 }
 
-@media screen and (max-width:450px) {
-    .add {
-        font-size: 16px;
-        width: 25%;
-    }
 
-    .input {
-        width: 60%;
-    }
-}
 
 ul {
-    min-width: 90%;
+    width: 100%;
 }
 
-.tasks li {
+.todo li {
     background-color: white;
     min-width: 80%;
     margin: 10px auto;
@@ -94,10 +92,17 @@ ul {
     align-content: center;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
-.tasks li .del {
+.todo li.completed {
+    color: rgb(169, 167, 167);
+    text-decoration: line-through;
+}
+
+.todo li .del {
     background-color: #ff5433;
+    border: none;
     padding: 5px 15px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -106,4 +111,10 @@ ul {
     -o-border-radius: 5px;
     color: #fff;
     cursor: pointer;
+}
+
+small {
+    color: #b5b5b5;
+    font-size: 0.7rem;
+    text-align: center;
 }
