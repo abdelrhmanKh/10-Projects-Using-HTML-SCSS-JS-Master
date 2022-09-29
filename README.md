@@ -1,6 +1,6 @@
 # 10 Projects Using HTML SCSS JS
 
-## This Challange created By Florin Pop it Was 10 project in 10 hours but I do it using SCSS and in one and half day but I know the Time 😁😁
+## This Challange created By Florin Pop it Was 10 project in 10 hours but I do it using SCSS and in one and half day but I dont know the time it took exactly 😁😁
 
 1. Countdown Timer
 
